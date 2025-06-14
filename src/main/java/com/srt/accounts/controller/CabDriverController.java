@@ -33,7 +33,7 @@ public class CabDriverController {
         return driver;
     }
 
-    @PostMapping("/add-update")
+    @PostMapping("/add-or-update")
     public CabDriver addOrUpdateDriver(@RequestBody CabDriver cabDriver) {
         log.info("Request received to add or update cab driver: {}", cabDriver);
         CabDriver savedDriver = cabDriverService.addOrUpdateDriver(cabDriver);

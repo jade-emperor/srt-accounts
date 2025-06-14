@@ -7,7 +7,7 @@ import lombok.Data;
 @Data
 public class CabDriver {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY) //to use auto-incrementing IDs
     @Column(name = "id")
     private Long id;
     @Column(name = "driver_name", nullable = false)
